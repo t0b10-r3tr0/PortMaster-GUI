@@ -167,6 +167,15 @@ class HarbourMaster():
 
             self.platform.loaded()
 
+            ## Add PortMaster to gamelist.xml
+            pm_image = self.tools_dir / "PortMaster" / ".PortMaster.png"
+            if pm_image.is_file():
+                shutil.copy(pm_image, self.ports_dir / ".PortMaster.png")
+
+            gameinfo_xml = self.tools_dir / "PortMaster" / "PortMaster.gameinfo.xml"
+            if gameinfo_xml.is_file() and self.cfg_data.get('gamelist_update', True):
+                self.platform.gamelist_add(gameinfo_xml)
+
             self.save_config()
 
     def update_config(self):

@@ -1,0 +1,8 @@
+<gameList>
+	<game>
+		<path>./PortMaster.sh</path>
+		<name>PortMaster</name>
+		<desc>PortMaster is an open-source manager that installs game ports directly to your device, optimized for peak performance. It provides easy access to over 1300 PC and indie titles, ranging from ready-to-play freeware to community-optimized commercial classics. Simply browse the library to download your favorites and enjoy perfectly mapped controls on the go.</desc>
+		<image>./.PortMaster.png</image>
+	</game>
+</gameList>
